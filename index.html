@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/default.js"></script>
     <link rel="stylesheet" href="css/default.css">
 </head>
 
@@ -21,9 +23,30 @@
         </div>
     </header>
     <nav id="nav">
-        <a class="nav-link" href="#">Fruits</a>
-        <a class="nav-link" href="#">Légumes</a>
-        <a class="nav-link" href="#">Céréales</a>
+        <a class="nav-link" data-toggle="collapse" data-target="#collapseFruit">Fruits</a> 
+        <div class="collapse" id="collapseFruit">
+            <ul>
+                <li><a href="#">Pommes</a></li>
+                <li><a href="#">Poires</a></li>
+                <li><a href="#">Fraises</a></li>
+            </ul>
+        </div>
+        <a class="nav-link" data-toggle="collapse" data-target="#collapseLegume">Légumes</a>
+        <div class="collapse" id="collapseLegume">
+            <ul>
+                <li><a href="#">Carottes</a></li>
+                <li><a href="#">Patates</a></li>
+                <li><a href="#">Poireaux</a></li>
+            </ul>
+        </div>
+        <a class="nav-link" data-toggle="collapse" data-target="#collapseCereales">Céréales</a>
+        <div class="collapse" id="collapseCereales">
+            <ul>
+                <li><a href="#">Blé</a></li>
+                <li><a href="#">Maïs</a></li>
+                <li><a href="#">Orge</a></li>
+            </ul>
+        </div>
     </nav>
     <div id="content">
         on travaille ici

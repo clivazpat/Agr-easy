@@ -31,6 +31,9 @@ header{
     float: left;
     height: calc(100% - 110px);
 }
+#nav a {
+    cursor: pointer;
+}
 #content{
     float: left;
     width: calc(100% - 140px);
