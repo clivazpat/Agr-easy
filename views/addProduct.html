@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="../js/moment.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/default.js"></script>
+	<link rel="stylesheet" href="../css/default.css">
+	<script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+	<link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<div id="contLogo">
+			<img src="../img/logo.png" onclick="window.location = '../index.html'" />
+		</div>
+		<div id="contSearch">
+			<input type="text" class="form-control" id="searchBar" placeholder="Rechercher....">
+		</div>
+	</header>
+	<nav id="nav">
+		<a class="nav-link" data-toggle="collapse" data-target="#collapseFruit">Fruits</a>
+		<div class="collapse" id="collapseFruit">
+			<ul>
+				<li><a href="#">Pommes</a></li>
+				<li><a href="#">Poires</a></li>
+				<li><a href="#">Fraises</a></li>
+			</ul>
+		</div>
+		<a class="nav-link" data-toggle="collapse" data-target="#collapseLegume">Légumes</a>
+		<div class="collapse" id="collapseLegume">
+			<ul>
+				<li><a href="#">Carottes</a></li>
+				<li><a href="#">Patates</a></li>
+				<li><a href="#">Poireaux</a></li>
+			</ul>
+		</div>
+		<a class="nav-link" data-toggle="collapse" data-target="#collapseCereales">Céréales</a>
+		<div class="collapse" id="collapseCereales">
+			<ul>
+				<li><a href="#">Blé</a></li>
+				<li><a href="#">Maïs</a></li>
+				<li><a href="#">Orge</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="content">
+		<h1>Nouveau produit</h1>
+		<form>
+			<div class="form-group">
+				<label for="category">Catégorie</label>
+				<select class="form-control">
+					<option>Fruits</option>
+					<option>Légumes</option>
+					<option>Céréales</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="type">Type</label>
+				<select class="form-control">
+					<option>Carottes</option>
+					<option>Pommes de terre</option>
+					<option>Poireaux</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="variety">Variété</label>
+				<select class="form-control">
+					<option>Peaux colorées</option>
+					<option>Toutes colorées</option>
+					<option>Anciennes</option>
+					<option>Nouvelles</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleFormControlFile1">Photo du produit</label>
+				<input type="file" class="form-control-file" id="exampleFormControlFile1">
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+				<label class="form-check-label" for="inlineRadio1">Première qualité</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+				<label class="form-check-label" for="inlineRadio2">Qualité normale</label>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Quantité</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer une quantité">
+				<small id="emailHelp" class="form-text text-muted">Ceci est la quantité en kg.</small>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Prix de départ</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer un prix">
+				<small id="emailHelp" class="form-text text-muted">Ceci est le prix/kg de départ.</small>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Prix final</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer un prix">
+				<small id="emailHelp" class="form-text text-muted">Ceci est le prix/kg minimum.</small>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label>Date de récolte</label>
+					<input id="daterecolte" />
+					<script>
+						$('#daterecolte').datepicker({
+					uiLibrary: 'bootstrap4'
+				});
+			</script>
+				</div>
+				<div class="col">
+					<label>Date de fin de la vente</label>
+					<input id="datefin" />
+					<script>
+						$('#datefin').datepicker({
+					uiLibrary: 'bootstrap4'
+				});
+			</script>
+				</div>
+			</div>
+			<br>
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">J'accepte les conditions générales d'utilisation et de
+					vente.</label>
+			</div>
+			<button type="button" class="btn btn-primary" onclick="window.location = '../index.html'">Confirmer</button>
+		</form>
+	</div>
+</body>
+
+</html>

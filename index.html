@@ -16,7 +16,7 @@
 <body>
     <header>
         <div id="contLogo">
-            <img src="images/logo.png" />
+            <img src="img/logo.png" />
         </div>
         <div id="contSearch">
             <input type="text" class="form-control" id="searchBar" placeholder="Rechercher....">
@@ -35,7 +35,7 @@
         <div class="collapse" id="collapseLegume">
             <ul>
                 <li><a href="#">Carottes</a></li>
-                <li><a href="#">Patates</a></li>
+                <li><a href="#">Pommes de terre</a></li>
                 <li><a href="#">Poireaux</a></li>
             </ul>
         </div>
@@ -47,6 +47,7 @@
                 <li><a href="#">Orge</a></li>
             </ul>
         </div>
+        <a class="btn btn-primary" href="./views/addProduct.html">Ajouter produit</a>
     </nav>
     <div id="content">
         <div id="filter" class="row">
@@ -57,8 +58,8 @@
             </select>
             <select class="form-control col-sm-2" id="exampleFormControlSelect1">
                 <option selected="selected" disabled="disabled">Filtrer par Qualité</option>
-                <option>1er qualité</option>
-                <option>2eme qualité</option>
+                <option>Première qualité</option>
+                <option>Qualité normale</option>
             </select>
             <select class="form-control col-sm-2" id="exampleFormControlSelect1">
                 <option selected="selected" disabled="disabled">Filtrer par Date de fin</option>
@@ -68,10 +69,10 @@
         </div>
         <ul>
             <li class="item" onclick="window.location = './views/showProduct.html'">
-                <div class="photo" style="background-image: url('images/patate.jpg')"></div>
-                <div class="title">50kg de patate - première qualité</div>
-                <div class="prix">3.- / KG</div>
-                <div class="datefin">Date de fin : 25.12.2018</div>
+                <div class="photo" style="background-image: url('img/patate.jpg')"></div>
+                <div class="title">50kg de patate - Première qualité</div>
+                <div class="prix">3.- / Kg</div>
+                <div class="datefin"><b>Date de fin :</b> 25.12.2018</div>
             </li>
         </ul>
     </div>
