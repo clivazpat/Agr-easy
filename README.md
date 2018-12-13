@@ -36,9 +36,12 @@
 ### Évaluations comme "Uber"
 * Avis peut être donné dans les 2 sens, acheteur et producteur peuvent se noter, systèmes d'étoiles et description
 
-# To-do
+# Travail réalisé
+Maxime Bétrisey, Patrick Clivaz
 * Logo
-* 3 vues : recherche, ajout d'produit, affichage d'un produit (bootstrap)
+* 3 vues : recherche, ajout d'un produit, affichage d'un produit (Bootstrap & Visual Studio Code)
+
+Steve Coullery, Sandrine Antonietti, Samrawi Tecle
 * Scénario
 * Business Model
 * Présentation story-telling
