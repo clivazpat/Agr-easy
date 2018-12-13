@@ -1,0 +1,40 @@
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+header{
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid black;
+    height: 110px;
+}
+
+#contLogo{
+    width: 400px;
+    display: inline-block;
+}
+#contSearch{
+    margin-left: 50px;
+    width : calc(100% - 480px);
+    display: inline-block;
+}
+#contSearch input{
+
+}
+#contLogo img{
+    max-width: 100%;
+}
+
+#nav{
+    border-right:1px solid rgba(120,120,120, 0.5);
+    width : 140px;
+    float: left;
+    height: calc(100% - 110px);
+}
+#content{
+    float: left;
+    width: calc(100% - 140px);
+    height: calc(100% - 110px);
+    padding: 15px;
+    overflow: auto;
+}
