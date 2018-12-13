@@ -23,7 +23,7 @@
         </div>
     </header>
     <nav id="nav">
-        <a class="nav-link" data-toggle="collapse" data-target="#collapseFruit">Fruits</a> 
+        <a class="nav-link" data-toggle="collapse" data-target="#collapseFruit">Fruits</a>
         <div class="collapse" id="collapseFruit">
             <ul>
                 <li><a href="#">Pommes</a></li>
@@ -49,7 +49,31 @@
         </div>
     </nav>
     <div id="content">
-        on travaille ici
+        <div id="filter" class="row">
+            <select class="form-control col-sm-2" id="exampleFormControlSelect1">
+                <option selected="selected" disabled="disabled">Filtrer par Prix</option>
+                <option>Croissant</option>
+                <option>Décroissant</option>
+            </select>
+            <select class="form-control col-sm-2" id="exampleFormControlSelect1">
+                <option selected="selected" disabled="disabled">Filtrer par Qualité</option>
+                <option>1er qualité</option>
+                <option>2eme qualité</option>
+            </select>
+            <select class="form-control col-sm-2" id="exampleFormControlSelect1">
+                <option selected="selected" disabled="disabled">Filtrer par Date de fin</option>
+                <option>Croissant</option>
+                <option>Décroissant</option>
+            </select>
+        </div>
+        <ul>
+            <li class="item" onclick="window.location = './views/showProduct.html'">
+                <div class="photo" style="background-image: url('images/patate.jpg')"></div>
+                <div class="title">50kg de patate - première qualité</div>
+                <div class="prix">3.- / KG</div>
+                <div class="datefin">Date de fin : 25.12.2018</div>
+            </li>
+        </ul>
     </div>
 </body>
 

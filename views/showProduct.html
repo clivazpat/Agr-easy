@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/default.js"></script>
-    <link rel="stylesheet" href="css/default.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/default.js"></script>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/showProduct.css">
 </head>
 
 <body>
     <header>
         <div id="contLogo">
-            <img src="images/logo.png" />
+            <img src="../images/logo.png"  onclick="window.location = '../index.html'"/>
         </div>
         <div id="contSearch">
             <input type="text" class="form-control" id="searchBar" placeholder="Rechercher....">
@@ -49,7 +50,22 @@
         </div>
     </nav>
     <div id="content">
-        <div id="img" src=""
+        <div id="img" style="background-image: url('../images/patate.jpg')"></div>
+        <div id="titleProduct">
+            50kg de patate - première qualité
+        </div>
+        <div id="prixProduct">
+            Prix : 3.- / KG
+        </div>
+        <div id="dateRecolte">
+            Récolté le : 13.12.2018
+        </div>
+        <div id="datefin">
+            Fin de la vente le : 13.12.2018
+        </div>
+        <div id="commander">
+            <a href="#" class="btn btn-primary">Commander</a>
+        </div>
     </div>
 </body>
 
